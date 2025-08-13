@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color:  #2B2733;
+    color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #322f38;
+}
+
+.sidebar button {
+    padding: 10px;
+    background: #2B2733;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border: 4px solid #322f38;
+    text-align: left;
+}
+
+.sidebar button:hover {
+    background: #0056b3;
+}
+
+.content {
+    flex: 1;
+    background: #322f38;
+    display: none;
+    height: 100%;
+    color: #f0f0f0;
+}
+
+.exemplo {
+    background-color: #222222; /* Fundo estilo terminal */
+    color: #ffffff; /* Verde tipo terminal */
+    font-family: "Courier New", Courier, monospace; /* Fonte monoespaçada */
+    padding: 8px 12px;
+    margin-top: 8px;
+    border-radius: 5px;
+    white-space: pre-wrap; /* Mantém quebras de linha */
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+.content.active {
+    display: grid;
+     text-align: justify;
+     align-content: center;
+     
+}

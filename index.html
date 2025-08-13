@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resumo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="Conceito">
@@ -20,91 +21,62 @@
             de codigo e portfolio.
         </p>
     </div>
-    <div class="comandos">
-        <div class="opcoe">
-            <p>
-                <button class="btn btn-primary comando" type="button" data-toggle="collapse" data-target="#init" aria-expanded="false" aria-controls="multiCollapseExample2">Init</button>
-                <button class="btn btn-primary comando" type="button" data-toggle="collapse" data-target="#commit" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Commit</button>
-                <button class="btn btn-primary comando" type="button" data-toggle="collapse" data-target="#status" aria-expanded="false" aria-controls="multiCollapseExample2">Status</button>
-                <button class="btn btn-primary comando" type="button" data-toggle="collapse" data-target="#add" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Add</button>
-                <button class="btn btn-primary comando" type="button" data-toggle="collapse" data-target="#clone" aria-expanded="false" aria-controls="multiCollapseExample2">Clone</button>
-                <button class="btn btn-primary comando" type="button" data-toggle="collapse" data-target="#push" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Push</button>
-                <button class="btn btn-primary comando" type="button" data-toggle="collapse" data-target="#pull" aria-expanded="false" aria-controls="multiCollapseExample2">Pull</button>
-                <button class="btn btn-primary comando" type="button" data-toggle="collapse" data-target="#branch" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Branch</button>
-                <button class="btn btn-primary comando" type="button" data-toggle="collapse" data-target="#merge" aria-expanded="false" aria-controls="multiCollapseExample2">Merge</button>
-                <button class="btn btn-primary comando" type="button" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Push</button>
-            
-            </p>
+    <div class="container">
+        <div class="sidebar">
+            <button type="button" data-target="init">Init</button>
+            <button type="button" data-target="commit">Commit</button>
+            <button type="button" data-target="add">Add</button>
+            <button type="button" data-target="clone">Clone</button>
+            <button type="button" data-target="push">Push</button>
+            <button type="button" data-target="pull">Pull</button>
+            <button type="button" data-target="branch">Branch</button>
+            <button type="button" data-target="merge">Merge</button>            
         </div>
         <div class="row explicacao">
-            <div class="col">
-                <div class="collapse multi-collapse" id="init">
-                    O comando init é usado para iniciar um repositorio no diretorio local, ou seja, no diretorio atual.
-                    <div class="exemplo">
-                        Exemplo: git init
-                    </div>
-                </div>
+            <div class="content" id="init">
+                O comando init é usado para iniciar um repositorio no diretorio local, ou seja, no diretorio atual.
+                <div class="exemplo"> Exemplo: git init </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="collapse multi-collapse" id="commit">
+            <div class="content" id="commit">
                 O comando commit grava as alterações no repositorio atual.
                 É importante explicar as alterações feitas para controle e organização das versões, assim é possivel saber as alterações sem precisar abrir o arquivo.
-                <div class="exemplo">
-                    Exemplo: git commit -m "mensagem das alterações feitas"
-                </div>
+                <div class="exemplo">Exemplo: git commit -m "mensagem das alterações feitas"</div>
             </div>
-        </div>
-        <div class="col">
-                <div class="collapse multi-collapse" id="status">
-                   O comando status exibe o status atual do repositorio, exibindo mudanças que ainda não foram confirmadas, por exemplo.
-                    <div class="exemplo">
-                        Exemplo: git status
-                    </div>
-                </div>
+            <div class="content" id="status">
+                O comando status exibe o status atual do repositorio, exibindo mudanças que ainda não foram confirmadas, por exemplo.
+                    <div class="exemplo">Exemplo: git status</div>
             </div>
-        </div>
-        <div class="col">
-            <div class="collapse multi-collapse" id="add">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            <div class="content" id="add">
+                O comando add adicionanda um arquivo a "area de preparação", significa que esta aguardando ser "commitado".
+                <div class="exemplo">Exemplo: git add index.html</div>
             </div>
-        </div>
-        <div class="col">
-                <div class="collapse multi-collapse" id="clone">
-                    Anim pariatur cliche reprehenderit, enim alemanha 7x1 brasil life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            
-                </div>
+            <div class="content" id="clone">
+                O comando clone copia um repositorio remoto, para sua maquina. Devemos usar o clone sempre que precisar o projeto completo, 
+                historio, branches etc, o que é aconselhavel caso va fazer modificações no projeto. Se for so leitura, ai temos o download zip.
+                <div class="exemplo">Exemplo: git clone https://github.com/ana-bia07/IEC-Git-Github.git</div>
             </div>
-        </div>
-        <div class="col">
-            <div class="collapse multi-collapse" id="push">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            <div class="content" id="push">
+                O comando push envia seus commit locais para o reposito rio remoto (GitHub).
+                <div class="exemplo">Exemplo: git push origin main</div>
+                origin main é o local dentro do repositorio.
             </div>
-        </div>
-        <div class="col">
-                <div class="collapse multi-collapse" id="pull">
-                    Anim pariatur cliche reprehenderit, enim alemanha 7x1 brasil life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            
-                </div>
+            <div class="content" id="pull">
+                O comando pull baixa as ultimas mmudanças do repositorio remoto e aplica no repositorio local. Serve pra manter seu codigo atualizado com
+                o q esta no GitHub.
+                <div class="exemplo">git pull origin main</div>
             </div>
-        </div>
-        <div class="col">
-            <div class="collapse multi-collapse" id="branch">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            <div class="content" id="branch">
+                O comando branch cria uma ramificação. Serve para criar um "caminho" e trabalhar em uma mudança especifica.
+                <div class="exemplo">Exemplo: git branch nome-funcionalidade or git branch #para listar os branches</div>
             </div>
-        </div>
-        <div class="col">
-                <div class="collapse multi-collapse" id="merge">
-                    Anim pariatur cliche reprehenderit, enim alemanha 7x1 brasil life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="collapse multi-collapse" id="push">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            <div class="content" id="merge">
+                O comando une branch com o main. Incorpora o que foi feito de volta na branch principal.
+                <div class="exemplo">Exemplo: git checkout main
+         git merge nova-funcionalidade</div>
             </div>
         </div>
     </div>
+    <p> Caso tenha interesse, criar uma conta no GitHub é simples e eles oferecem um curso gratis de como usar.</p>
+    <script src="script.js"></script>
 </body>
 </html>
