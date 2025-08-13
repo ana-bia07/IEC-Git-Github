@@ -42,13 +42,13 @@ body {
 }
 
 .exemplo {
-    background-color: #222222; /* Fundo estilo terminal */
-    color: #ffffff; /* Verde tipo terminal */
-    font-family: "Courier New", Courier, monospace; /* Fonte monoespaçada */
+    background-color: #222222;
+    color: #ffffff; 
+    font-family: "Courier New", Courier, monospace; 
     padding: 8px 12px;
     margin-top: 8px;
     border-radius: 5px;
-    white-space: pre-wrap; /* Mantém quebras de linha */
+    white-space: pre-wrap;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
 }
 
